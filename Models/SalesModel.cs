@@ -2,15 +2,15 @@
 {
     public class SalesModel
     {
-        public int VendaId { get; set; }
-        public DateTime DataVenda { get; set; }
-        public decimal ValorTotal { get; set; }
+        public int? SalesId { get; set; }
+        public DateTime? SalesDate { get; set; }
+        public decimal? TotalAmount { get; set; }
+        public int? SalesmanId { get; set; }
+        public int? ClientId { get; set; }
 
-        // Foreign key for many-to-one relationship
-        public int ClientId { get; set; }
+        // Relationships
+        public SalesmanModel? Salesman { get; set; }
         public ClientModel? Client { get; set; }
-
-        // Navigation property for many-to-many relationship
-        public ICollection<ProductModel>? Products { get; set; }
+        public ICollection<SaleItem>? SaleItems { get; set; }
     }
 }

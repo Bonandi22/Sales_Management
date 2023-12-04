@@ -10,7 +10,8 @@
         public string? PhoneNumber { get; set; }
         public DateTime DateOfBirth { get; set; }
 
-        // Navigation property for many-to-many relationship
+        // Navigation properties
         public ICollection<SalesModel>? Sales { get; set; }
+        public ICollection<SalesmanModel>? Salesmen { get; set; }
     }
 }
