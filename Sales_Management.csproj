@@ -23,9 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Client\" />
-    <Folder Include="Views\Product\" />
-    <Folder Include="Views\Salesman\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
