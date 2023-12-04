@@ -1,7 +1,10 @@
-﻿namespace Sales_Management.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Sales_Management.Models
 {
     public class SaleItem
     {
+        [Key]
         public int? SaleId { get; set; }
         public int? ProductId { get; set; }
         public decimal? Quantity { get; set; }

@@ -4,6 +4,7 @@ namespace Sales_Management.Models
 {
     public class LoginModel
     {
+        [Key]
         public string? Id { get; set; }
 
         [Required(ErrorMessage = "Enter the user's email!")]

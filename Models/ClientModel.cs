@@ -1,7 +1,10 @@
-﻿namespace Sales_Management.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Sales_Management.Models
 {
     public class ClientModel
     {
+        [Key]
         public int ClientId { get; set; }
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
@@ -12,6 +15,5 @@
 
         // Navigation properties
         public ICollection<SalesModel>? Sales { get; set; }
-        public ICollection<SalesmanModel>? Salesmen { get; set; }
     }
 }

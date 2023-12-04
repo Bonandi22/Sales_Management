@@ -1,8 +1,11 @@
-﻿namespace Sales_Management.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Sales_Management.Models
 {
     public class SalesModel
     {
-        public int? SalesId { get; set; }
+        [Key]
+        public int SalesId { get; set; }
         public DateTime? SalesDate { get; set; }
         public decimal? TotalAmount { get; set; }
         public int? SalesmanId { get; set; }
