@@ -6,14 +6,12 @@ namespace Sales_Management.Models
     {
         public string? Id { get; set; }
 
-        public string? Name { get; set; }
-
-        [Required(ErrorMessage = "Informe o e-mail do usuário!")]
+        [Required(ErrorMessage = "Enter the user's email!")]
         [DataType(DataType.EmailAddress)]
-        [EmailAddress(ErrorMessage = "O e-mail informado é inválido!")]
+        [EmailAddress(ErrorMessage = "The email provided is invalid!")]
         public string? Email { get; set; }
 
-        [Required(ErrorMessage = "Informe a senha do usuário!")]
+        [Required(ErrorMessage = "Enter the user password!")]
         public string? Password { get; set; }
 
     }

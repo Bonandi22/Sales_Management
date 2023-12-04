@@ -22,4 +22,11 @@
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Client\" />
+    <Folder Include="Views\Product\" />
+    <Folder Include="Views\Salesman\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
 </Project>
